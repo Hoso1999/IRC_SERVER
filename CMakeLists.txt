@@ -1,7 +1,8 @@
 cmake_minimum_required(VERSION 3.20)
 project(ft_irc)
-set(CMAKE_CXX_STANDARD 98)
+set(CMAKE_CXX_STANDARD 11)
 
+add_subdirectory(bot)
 include_directories(include)
 include_directories(include/network)
 include_directories(include/commands)
@@ -11,6 +12,7 @@ set(SOURCES
 		src/network/Client.cpp
 		src/network/Channel.cpp
 		src/commands/CommandHandler.cpp
+		src/commands/impl/FileCommand.cpp
 		src/commands/impl/NickCommand.cpp
 		src/commands/impl/PassCommand.cpp
 		src/commands/impl/UserCommand.cpp
