@@ -80,8 +80,11 @@ JOIN chan
 :hello!hello@localhost PRIVMSG #chan :hi all 
 :nick!nick@localhost JOIN :chan
 ```
+## Run Bot
+```bash
+cd build/bot && ./ircbot <host> <port> <password>
+```
 ## Contributing
-
 Contributions to Minishell are welcome!.
 
 Before submitting a pull request, please ensure that you follow these guidelines:
